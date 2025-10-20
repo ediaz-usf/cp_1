@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <br>
     <form action="" id="feedback_form"> 
-        <label for="feedback_form">Your Feedback:</label>
-        <br>
+        <label for="username">Your Username:</label><br>
         <input type="text" id="username" placeholder="Enter your username">
-        <br>
+        <span class="tooltip" id="tooltip-username">Enter a unique username</span>
+    <br><br>
+
+        <label for="email">Your Email:</label><br>
         <input type="text" id="email" placeholder="Enter your email">
-        <br>
+        <span class="tooltip" id="tooltip-email">example@email.com</span>
+    <br><br>
+
+        <label for="comments">Your Comments:</label><br>
         <textarea name="comments" id="comments" placeholder="Enter your comments"></textarea>
-        <br>
-        <button id="submit-btn" type="submit">Submit</button>
-    <br>
-    </form>
-    <br>
+        <span class="tooltip" id="tooltip-comments">(max 200 characters)</span>
+    <br><br>
+
+    <button id="submit-btn" type="submit">Submit</button>
+</form>
 
 
     <script src="cp_1.js"></script>
