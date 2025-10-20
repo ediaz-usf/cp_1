@@ -9,6 +9,8 @@
 <body>
     <br>
     <form action="" id="feedback_form"> 
+    <label for="feedback-form">Feedback Form</label>
+    <br><br>
         <label for="username">Your Username:</label><br>
         <input type="text" id="username" placeholder="Enter your username">
         <span class="tooltip" id="tooltip-username">Enter a unique username</span>
@@ -23,6 +25,10 @@
         <textarea name="comments" id="comments" placeholder="Enter your comments"></textarea>
         <span class="tooltip" id="tooltip-comments">(max 200 characters)</span>
     <br><br>
+
+    <div id="feedback-display">
+        <h3>Feedback:</h3>
+    </div>
 
     <button id="submit-btn" type="submit">Submit</button>
 </form>

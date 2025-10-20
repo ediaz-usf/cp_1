@@ -1,9 +1,12 @@
-// create event listeners for feedback form
-const feedbackInput = document.getElementById('comments');
+// create variables for elements
+const username = document.getElementById('username');
+const email = document.getElementById('email')
+const comments = document.getElementById('comments');
 const submitButton = document.getElementById('submit-btn');
+const feedbackDisplay = document.getElementById('feedback-display');
 
 // character count listener
-feedbackInput.addEventListener('input', (e) => {
+comments.addEventListener('input', (e) => {
     const charCount = e.target.value.length;
     console.log(`Char count: ${charCount}`);
 })
@@ -11,6 +14,20 @@ feedbackInput.addEventListener('input', (e) => {
 // submit button listeners
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
+
+    // add validation message
+    if (username.value === '') {
+        alert('Username is required');
+    } else if (email.value === '') {
+        alert('Email is required');
+    } else if (comments.value === '') {
+        alert('Comments are required');
+    } else {
+        const entry = document.createElement('div')
+        entry.textContent = `Username: ${username.value}, Email: ${email.value}, Comments: ${comments.value}`;
+        feedbackDisplay.appendChild(entry);
+        alert('Form submitted successfully!');
+    }
 })
 
 
