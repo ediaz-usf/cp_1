@@ -1,3 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+#feedback_form {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+#feedback_form input,
+#feedback_form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+#submit-btn {
+    background-color: #2817c4;
+    color: white;
+    padding: 10px 15px;
+    font-size: large;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #1e0fa3;
+}
+
+#feedback-display {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: #f9f9f9;
+}
+
+
+
 .tooltip {
   display: none;
   color: #555;

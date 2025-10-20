@@ -1,4 +1,5 @@
 // create variables for elements
+const feedbackForm = document.getElementById('feedback_form');
 const username = document.getElementById('username');
 const email = document.getElementById('email')
 const comments = document.getElementById('comments');
@@ -51,3 +52,8 @@ fields.forEach(field => {
         tooltipElement.style.display = 'none';
     })
 })
+
+// prevent background clicks on form
+feedbackForm.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
